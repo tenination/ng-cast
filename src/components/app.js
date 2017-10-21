@@ -1,5 +1,9 @@
 angular.module('video-player')
 
+  .config(function($sceProvider) {
+    $sceProvider.enabled(false);
+  }) 
+
   .component('app', {
     bindings: {
       
@@ -15,4 +19,7 @@ angular.module('video-player')
       };
       this.videos = window.exampleVideoData;
     }
-  });
+  });  
+
+  
+
