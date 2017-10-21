@@ -3,7 +3,7 @@
     <img class="media-object" ng-src="https://i.ytimg.com/vi/{{$ctrl.video.id.videoId}}/default.jpg" />
   </div>
   <div class="media-body">
-    <div ng-click="$ctrl.selectVideo($ctrl.video)" current-video="$ctrl.currentVideo" class="video-list-entry-title">{{$ctrl.video.snippet.title}}</div>
+    <div ng-click="$ctrl.selectVideo($ctrl.video)" current-video="$ctrl.currentVideo" change-views="$ctrl.changeViews" class="video-list-entry-title">{{$ctrl.video.snippet.title}}</div>
     <div class="video-list-entry-detail">{{$ctrl.video.snippet.description}}</div>
   </div>
 </li>
